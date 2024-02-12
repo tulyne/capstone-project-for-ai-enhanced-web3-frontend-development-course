@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,53 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Token Minter dApp</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header section -->
-    <header>
-        <h1>Welcome to our Token Minter dApp</h1>
+    <header class="bg-blue-500 text-white py-4">
+        <h1 class="text-3xl text-center">Welcome to our Token Minter dApp</h1>
         <!-- Navigation menu -->
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#mint">Mint Tokens</a></li>
+        <nav class="text-center">
+            <ul class="flex justify-center">
+                <li class="mr-6"><a href="#home">Home</a></li>
+                <li class="mr-6"><a href="#mint">Mint Tokens</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main content section -->
-    <main>
+    <main class="container mx-auto py-8">
         <!-- Introduction article -->
         <article id="home">
-            <h2>Introduction to Token Minting</h2>
+            <h2 class="text-2xl mb-4">Introduction to Token Minting</h2>
             <p>This dApp allows users to create their own tokens on the blockchain, providing a unique and secure way to represent digital assets.</p>
         </article>
 
         <!-- Token minting section -->
-        <section id="mint">
-            <h2>Mint Your Tokens</h2>
+        <section id="mint" class="py-8">
+            <h2 class="text-2xl mb-4">Mint Your Tokens</h2>
             <!-- Token minting form -->
-            <form action="#">
+            <form action="#" class="space-y-4">
                 <fieldset>
-                    <legend>Token Minting Information</legend>
+                    <legend class="text-xl">Token Minting Information</legend>
                     <!-- Email input -->
-                    <label for="email">Enter your email:</label>
-                    <input type="email" id="email" name="email" placeholder="user@example.com" required>
+                    <label for="email" class="block">Enter your email:</label>
+                    <input type="email" id="email" name="email" placeholder="user@example.com" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
                     <!-- Token amount input -->
-                    <label for="tokenAmount">Token amount:</label>
-                    <input type="number" id="tokenAmount" name="tokenAmount" min="1" required>
+                    <label for="tokenAmount" class="block">Token amount:</label>
+                    <input type="number" id="tokenAmount" name="tokenAmount" min="1" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
                     <!-- Mint button -->
-                    <button type="submit">Mint Tokens</button>
+                    <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-300">Mint Tokens</button>
                 </fieldset>
             </form>
         </section>
 
+    </main>
+
         <!-- Sidebar section -->
-        <aside>
-            <h3>Learn More:</h3>
-            <p>Explore more about blockchain technology and token minting:</p>
-            <ul>
+        <aside class="py-8">
+            <h3 class="text-2xl mb-4">Learn More:</h3>
+            <p class="mb-4">Explore more about blockchain technology and token minting:</p>
+            <ul class="list-disc pl-8">
                 <li><a href="#">Understanding Blockchain</a></li>
                 <li><a href="#">How Token Minting Works</a></li>
                 <li><a href="#">Benefits of Tokenization</a></li>
@@ -60,8 +64,9 @@
         </aside>
     </main>
 
+
     <!-- Footer section -->
-    <footer>
+    <footer class="w-full bg-blue-500 text-white py-4 text-center">
         <!-- Contact information -->
         <p>Contact us at <a href="mailto:hello@dProgrammingUniversity.com">hello@dProgrammingUniversity.com</a></p>
     </footer>
