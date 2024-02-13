@@ -1,0 +1,49 @@
+/* Custom CSS to overwrite Tailwind CSS */
+
+/* Customizing the body */
+body {
+    width: 100%;
+    height: 100vh;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #1b1b32; /* Dark blue background color */
+    color: #f5f6f7; /* white text color */
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  /* Input background color */
+  input {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  } 
+  
+  /* Customizing the input and button elements */
+  input, button {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  /* Further customization */
+  button[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    min-width: 300px;
+  }
+  
+  /* Centralising h2 elements */
+  h2 {
+    text-align: center;
+  }
+  
+  /* Adding top margin to the label elements */
+  label {
+    margin-top: 15px;
+  }
